@@ -96,4 +96,14 @@ $(document).ready(function() {
       offset: '50%'
     });
 
+    /* Mobile navigation */
+    $('.js--mobile-nav-icon').click().click(function() {
+      var nav = $('.js--main-nav');
+      var icon = $('.js--mobile-nav-icon i');
+      nav.slideToggle(200);
+
+      icon.toggleClass('ion-close-round');
+      icon.toggleClass('ion-navicon-round');
+    });
+
 });
